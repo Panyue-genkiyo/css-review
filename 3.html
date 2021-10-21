@@ -31,8 +31,22 @@
             color: dodgerblue
         } */
          /*main的直接后代的元素类型为h1的第一个dom*/
-        main>h1:nth-of-type(1){
+        /* main>h1:nth-of-type(1){
             color: dodgerblue
+        } */
+
+        /*倒数第一个*/
+        /* main>ul li:nth-last-child(1){
+           color:aqua;
+        } */
+        
+        /*倒数前两个*/
+        /* main>ul li:nth-last-child(-n+2){
+            color:darkmagenta;
+        } */
+        /*与nth-of-type同理*/
+        main>article h1:nth-last-of-type(1){
+            font-size:34px
         }
     </style>
 </head>
@@ -52,6 +66,7 @@
                 <h3>你好</h3>
             </aside>
             <h1>test css</h1>
+            <span>sss</span>
         </article>
         <h1>hello</h1>
     </main>
