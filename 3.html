@@ -39,14 +39,18 @@
         /* main>ul li:nth-last-child(1){
            color:aqua;
         } */
-        
+
         /*倒数前两个*/
         /* main>ul li:nth-last-child(-n+2){
             color:darkmagenta;
         } */
         /*与nth-of-type同理*/
-        main>article h1:nth-last-of-type(1){
+        /* main>article h1:nth-last-of-type(1){
             font-size:34px
+        } */
+        /*排除选择器 排除第二个和排除第一个 not*/
+        main>ul li:nth-child(-n+3):not(:nth-child(2)):not(:first-child){
+            color: red
         }
     </style>
 </head>
