@@ -12,20 +12,21 @@
             border: 1px solid silver;
             width: 400px; 
             height: 100px;
-            grid-template-columns: repeat(4, 100px);
+            grid-template-columns: repeat(4, 60px);
             /* justify-items:center;
             align-items:center; */
             /*垂直方向中心，水平方向间距都一样*/
-            /* place-content: center space-evenly; */
+            /*注意place-content是控制珊格之间的对齐方式*/
+            place-content: center space-evenly;
             /*组合定义*/
             /*垂直方向贴底部，水平方向间距都一样*/
             /* place-content: end space-evenly; */
             /*只设置一个代表垂直和水平参数一样 比如下面都是居中*/
             /* place-content: start center; */
 
-            /*对珊格元素在珊格里面的排列方式*/
+            /*place-items决定珊格元素在珊格里面的排列方式 整体决定 珊格元素一个对齐方式*/
             /*垂直start, 水平center*/
-            /* place-items: start end; */
+            /* place-items: end center; */
             
         }
         article div{
