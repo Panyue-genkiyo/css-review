@@ -24,11 +24,17 @@ p{
 
         /*控制浮动显示区域形状定制(circle圆形 缩小到50%,且圆心在x:100, y:0的位置)*/
         // clip-path: circle(50% at 100% 0);
+        // clip-path:circle(50%);
         /*椭圆*/
-        // clip-path: ellipse(50% 30%)
+        clip-path: ellipse(50% 30%);
         //多边形 三点绘制等边三角形 polygon可定义无数的点
-        clip-path: polygon(50% 0, 100% 100%, 0 100%);
-    
+        // clip-path: polygon(50% 0, 100% 100%, 0 100%);
+      
+
+        /*控制文本内容环绕排版*/
+        // shape-outside: polygon(50% 0, 100% 100%, 0 100%); /*此时围绕浮动元素边界进行环绕*/
+        // shape-outside: circle(); /*围绕浮动元素圆形来排列*/
+        shape-outside:ellipse(50% 30%) /*围绕浮动元素椭圆来环绕*/
     }
     
     &::after{
