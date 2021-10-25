@@ -2,6 +2,15 @@ p{
     border:solid 1px #ddd;
     padding: 10px;
     
+    img{
+        width: 100px;
+        height: 100px;
+        clip-path: circle();
+        float:left;
+        margin: 0;
+        shape-outside: circle();
+    }
+
     span.shape{
         width:100px;
         height:100px;
@@ -36,6 +45,7 @@ p{
         // shape-outside: circle(); /*围绕浮动元素圆形来排列*/
         shape-outside:ellipse(50% 30%) /*围绕浮动元素椭圆来环绕*/
     }
+
     
     &::after{
        content:"";
