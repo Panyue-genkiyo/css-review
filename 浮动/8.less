@@ -1,0 +1,30 @@
+p{
+    border:solid 1px #ddd;
+    padding: 10px;
+    
+    span.shape{
+        width:100px;
+        height:100px;
+        float:left;
+        // background:red;
+        padding:30px;
+        border:solid 20px red;
+        margin: 10px;
+        /*围绕着边框*/
+        // shape-outside: border-box; 
+        /*文本在内边距的边框里*/
+        // shape-outside: padding-box;
+        /*文本在内容盒子里*/
+        // shape-outside: content-box;
+        /*文本在外边距那块*/
+        shape-outside:margin-box;
+        //外边的文本挨着边框
+        // shape-outside:border-box;
+    }
+    
+    &::after{
+       content:"";
+       display: block;
+       clear: both;
+    }
+}
