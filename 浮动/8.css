@@ -7,13 +7,16 @@ p span.shape {
   height: 100px;
   float: left;
   padding: 30px;
-  border: solid 20px red;
+  background: red;
   margin: 10px;
   /*围绕着边框*/
   /*文本在内边距的边框里*/
   /*文本在内容盒子里*/
   /*文本在外边距那块*/
   shape-outside: margin-box;
+  /*控制浮动显示区域形状定制(circle圆形 缩小到50%,且圆心在x:100, y:0的位置)*/
+  /*椭圆*/
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 p::after {
   content: "";
