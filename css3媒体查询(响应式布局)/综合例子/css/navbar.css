@@ -16,6 +16,9 @@ header .navbar .logo {
 header .navbar .logo + label {
   display: none;
 }
+header .navbar .logo + label + input {
+  display: none;
+}
 header .navbar .collapse {
   display: flex;
   flex-grow: 1;
