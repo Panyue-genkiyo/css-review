@@ -1,8 +1,8 @@
 /*import 导入样式*/
 
 /*通用 all css*/
-@import url(../使用link标签设置媒体类型/common.css) all;
+@import url(common.css) all;
 /*打印机设备*/
-@import url(../使用link标签设置媒体类型/print.css) print;
+@import url(print.css) print;
 /*屏幕设备 pc端 移动端*/
-@import url(../使用link标签设置媒体类型/screen.css) screen;
+@import url(screen.css) screen;
