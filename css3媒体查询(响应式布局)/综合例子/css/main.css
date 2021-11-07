@@ -1,3 +1,5 @@
+@import url(common.css);
+@import url(navbar.css);
 /*超小尺寸 小尺寸 中等尺寸 大尺寸*/
 @import url(small-x.css) only screen and (max-width:768px);
 @import url(small.css) only screen and (min-width:768px);
