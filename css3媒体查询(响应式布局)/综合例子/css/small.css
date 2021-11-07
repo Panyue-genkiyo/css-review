@@ -1,3 +1,21 @@
 body {
-  background: blue;
+  background: #fff;
+}
+.container .navbar {
+  width: 750px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 968px) {
+  header .navbar .logo {
+    margin-right: auto;
+  }
+  header .navbar .logo + label {
+    border: solid 1px #ddd;
+    padding: 0.5rem 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  header .navbar .collapse {
+    display: none;
+  }
 }

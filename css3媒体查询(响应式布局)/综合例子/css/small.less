@@ -1,3 +1,31 @@
 body{
-    background: blue;
+    background: #fff;
+}
+
+//small视窗的范围在768px到959px之间
+
+.container{
+    .navbar{
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 968px){
+    header{
+        .navbar{
+            .logo{
+                margin-right: auto;
+                &+label{
+                   border:solid 1px #ddd;
+                   padding:.5rem 1rem;
+                   color:#555;
+                   cursor:pointer;
+                }
+            }
+            .collapse{
+               display:none;
+            }
+        }
+    }
 }
