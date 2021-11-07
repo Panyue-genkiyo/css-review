@@ -59,25 +59,31 @@ header{
             .logo{
                 margin-right: auto;
                 &+label{
-
                    display: block;
                    border:solid 1px #ddd;
                    padding:.5rem 1rem;
                    color:#555;
                    cursor:pointer;
-                   
+                   &+input{
+                       display: none;
+                   }
+                   //当checkbox选中下面的菜单展示
+                   &+input:checked{
+                      &+.collapse{
+                          display:block;
+                      }
+                   }
                 }
             }
             .collapse{
-            //    display:none;
+               display:none;
                width: 100%;
                flex-flow:column;
                .links{
                    flex-direction: column;
                    margin-bottom: 1.5rem;
                    li{
-                       margin: .5rem 0;
-                      
+                       margin: .5rem 0;           
                    }
                }
             }

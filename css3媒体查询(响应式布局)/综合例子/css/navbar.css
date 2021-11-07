@@ -4,7 +4,7 @@ header {
 }
 header .navbar {
   display: flex;
-  height: 60px;
+  padding: 1rem 0;
   align-items: center;
 }
 header .navbar .logo {
@@ -12,6 +12,9 @@ header .navbar .logo {
   font-weight: bold;
   margin-right: 20px;
   font-size: 1.3rem;
+}
+header .navbar .logo + label {
+  display: none;
 }
 header .navbar .collapse {
   display: flex;
@@ -22,11 +25,13 @@ header .navbar .collapse .links {
   margin-right: auto;
   font-weight: bold;
 }
-header .navbar .collapse .links a {
-  color: #777;
+header .navbar .collapse .links li {
   margin: 0 10px;
 }
-header .navbar .collapse .links a:hover {
+header .navbar .collapse .links li a {
+  color: #777;
+}
+header .navbar .collapse .links li a:hover {
   color: #333;
 }
 header .navbar .collapse .form a {
@@ -38,4 +43,37 @@ header .navbar .collapse .form a {
 header .navbar .collapse .form a.form-bg {
   background: #3498db;
   color: white;
+}
+@media only screen and (max-width: 968px) {
+  header .navbar {
+    flex-flow: row wrap;
+  }
+  header .navbar .logo {
+    margin-right: auto;
+  }
+  header .navbar .logo + label {
+    display: block;
+    border: solid 1px #ddd;
+    padding: 0.5rem 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  header .navbar .logo + label + input {
+    display: none;
+  }
+  header .navbar .logo + label + input:checked + .collapse {
+    display: block;
+  }
+  header .navbar .collapse {
+    display: none;
+    width: 100%;
+    flex-flow: column;
+  }
+  header .navbar .collapse .links {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  header .navbar .collapse .links li {
+    margin: 0.5rem 0;
+  }
 }
