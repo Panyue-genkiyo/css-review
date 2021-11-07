@@ -1,0 +1,28 @@
+header{
+    border-bottom: solid 5px #3498db;
+    .navbar{
+        display: flex;
+        height: 60px;
+        align-items: center;
+        
+        .logo{
+            color:#3498db;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .collapse{
+           display: flex;
+           //撑满剩余空间 flex-grow
+           flex-grow: 1;
+           .links{
+               display: flex;
+               margin-right: auto;
+               a{
+                   color:#777;
+                   margin: 0 10px;
+               }
+           }
+        }
+    }
+}
