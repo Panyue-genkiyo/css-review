@@ -1,5 +1,6 @@
 header {
   border-bottom: solid 5px #3498db;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 header .navbar {
   display: flex;
@@ -10,6 +11,7 @@ header .navbar .logo {
   color: #3498db;
   font-weight: bold;
   margin-right: 20px;
+  font-size: 1.3rem;
 }
 header .navbar .collapse {
   display: flex;
@@ -18,8 +20,22 @@ header .navbar .collapse {
 header .navbar .collapse .links {
   display: flex;
   margin-right: auto;
+  font-weight: bold;
 }
 header .navbar .collapse .links a {
   color: #777;
   margin: 0 10px;
+}
+header .navbar .collapse .links a:hover {
+  color: #333;
+}
+header .navbar .collapse .form a {
+  border: solid 1px #3498db;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  color: #3498db;
+}
+header .navbar .collapse .form a.form-bg {
+  background: #3498db;
+  color: white;
 }
